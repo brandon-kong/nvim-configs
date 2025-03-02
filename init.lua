@@ -6,6 +6,7 @@ require("config.lazy")
 -- Opt configs
 vim.opt.number = true
 vim.opt.termguicolors = true
+vim.opt.undofile = false
 
 -- Global configs
 vim.g.loaded_netrw = 1
