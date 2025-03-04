@@ -1,6 +1,6 @@
 ----- Require -----
 require("config.lazy")
-
+require("config.mason")
 ----- Basic configurations -----
 
 -- Opt configs
@@ -25,3 +25,7 @@ vim.cmd[[colorscheme tokyonight]]
 
 
 ----- Setup -----
+require("mason").setup()
+require("mason-lspconfig").setup()
+
+vim.api.nvim_set_keymap("n", "<C-n>", ":NvimTreeToggle<CR>", { noremap = true, silent = true })
