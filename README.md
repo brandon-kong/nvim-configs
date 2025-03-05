@@ -5,7 +5,6 @@
 ### Plugins
 - autopairs
 - discord presence
-- lsp-zero
 - mason
 - mini-icons
 - minidiff
