@@ -9,6 +9,8 @@ vim.opt.termguicolors = true
 vim.opt.undofile = false
 vim.opt.termguicolors = true
 
+vim.g.clipboard = "unnamedplus" 
+
 vim.api.nvim_set_hl(0, "CmpGhostText", { link = "Comment", default = true })
 
 vim.opt.expandtab = true
