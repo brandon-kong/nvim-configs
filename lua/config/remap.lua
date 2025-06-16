@@ -18,3 +18,10 @@ vim.keymap.set("v", "<leader>y", '"+y')
 -- Paste from system clipboard
 vim.keymap.set("n", "<leader>p", '"+p')
 vim.keymap.set("v", "<leader>p", '"+p')
+
+-- Move remapping
+vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
+vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
+
+vim.keymap.set("n", "J", "mzJ`z")
+
