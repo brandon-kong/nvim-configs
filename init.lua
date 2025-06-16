@@ -12,7 +12,7 @@ local function require_config_modules(directory, prefix, ignore)
 			modules_loaded = modules_loaded + 1
 		end
 	end
-	vim.notify(string.format("Loaded %d modules", modules_loaded))
+	vim.notify(string.format("Loaded %d modules in %s", modules_loaded, config_path))
 end
 
 -- Dynamically require everything else in lua/config
@@ -27,5 +27,11 @@ require_config_modules("config", "config", ignore_config)
 
 -- Optionally: require plugin *.lua files
 require_config_modules("plugins", "plugins", {})
+
+require_config_modules("lsp", "lsp", {})
+
+-- Enable the LSPs
+vim.lsp.enable("luals")
+vim.lsp.enable("clangd")
 
 vim.notify("Neovim loaded!")
