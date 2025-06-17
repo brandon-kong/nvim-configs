@@ -1,4 +1,4 @@
-# LSP Support
+-- LSP Support
 vim.lsp.enable('luals')
 vim.lsp.enable('clangd')
 
@@ -33,3 +33,5 @@ vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
 
+-- netrw stuff
+vim.g.netrw_banner = 0
