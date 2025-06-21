@@ -1,7 +1,3 @@
--- LSP Support
-vim.lsp.enable('luals')
-vim.lsp.enable('clangd')
-
 vim.api.nvim_set_option("clipboard", "unnamed")
 
 -- Options
