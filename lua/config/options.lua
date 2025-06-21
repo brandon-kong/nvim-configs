@@ -1,9 +1,12 @@
+<<<<<<< HEAD
 local home = os.getenv("HOME") or os.getenv("USERPROFILE")
 
 -- LSP Support
 vim.lsp.enable('luals')
 vim.lsp.enable('clangd')
 
+=======
+>>>>>>> 0b1807c (chore: added lsp enabled)
 vim.api.nvim_set_option("clipboard", "unnamed")
 
 -- Options
