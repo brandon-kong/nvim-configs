@@ -1,3 +1,5 @@
+local home = os.getenv("HOME") or os.getenv("USERPROFILE")
+
 -- LSP Support
 vim.lsp.enable('luals')
 vim.lsp.enable('clangd')
@@ -20,7 +22,7 @@ vim.opt.wrap = false
 
 vim.opt.swapfile = false
 vim.opt.backup = false
-vim.opt.undodir = os.getenv("HOME") .. "./.vim/undodir"
+vim.opt.undodir = home .. "./.vim/undodir"
 
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
